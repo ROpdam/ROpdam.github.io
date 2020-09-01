@@ -1,5 +1,4 @@
 # Portfolio Website
----
 Personal portfolio stating my experiences, educations, projects and contact information
 
 ```
@@ -15,7 +14,12 @@ Personal portfolio stating my experiences, educations, projects and contact info
 │   ├── at_logo.png
 │   ├── cv.png
 │   ├── github.png
-│   └── linkedin.png
+│   ├── linkedin.png
+│   ├── schiphol.png
+│   ├── smu.png
+│   ├── sri_lanka.png (local)
+│   ├── vu.png
+│   └── ygroup.png
 │
 ├── boostrap.css
 ├── bootstrap.min.js
