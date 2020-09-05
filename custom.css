@@ -3,11 +3,6 @@ body {
   padding-top: 3.5rem;
 }
 
-.big-banner {
-	background-image: url(../images/sri_lanka.jpg);
-	background-size: 100%;
-}
-
 .page-style {
 	background-color: white;
 }
@@ -16,12 +11,70 @@ body {
 	background-color: lightgrey
 }
 
+.banner {
+	opacity: 1;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.top-left {
+	transition: 0.3s ease;
+	opacity: 0;
+	position: absolute;
+	font-size: 10px;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+.container-fluid:hover .banner {
+	opacity: 0.3;
+}
+
+.container-fluid:hover .top-left {
+	opacity: 0.8;
+}
+
+.text {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
+
+.banner:hover div{
+	/* display: block; */
+	transition: 0.5s
+}
+
+.image-text {
+	position: absolute;
+	top: 10%; 
+	left: 10px;
+	/* display: none;
+	position: relative;
+	top: -93%;
+	font-size: 10px; */
+    /* height:30px;
+    width:290px; */
+	margin-left:10px;
+	margin: 0px;
+	z-index: 0;
+}
+
+.panel-img {
+	border-radius: 25px;
+}
+
 .item {
-	margin: 10px;
+	margin: 30px;
 	padding: 20px;
-	background-color: #E8E8E8;
-	border-radius: 15px;
 	background-color: white;
+	border-radius: 15px;
+	box-shadow: 10px 7px 10px 5px;
+	/* background-color: white; */
 }
 
 .item:hover{
