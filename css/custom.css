@@ -8,12 +8,20 @@ body {
 }
 
 .profile-pic {
-	width: 100%;
+	width: 110%;
 }
 
 @media (max-width:800px) {
 	.profile-pic {
-	  display: none;
+		width: 20%;
+		position: absolute;
+		top: -1200%;
+		left: 70%;
+	}
+
+	.personal-text {
+		position: absolute;
+		top: 100%;
 	}
   }
 
