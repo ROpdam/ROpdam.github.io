@@ -11,8 +11,14 @@ body {
 	width: 100%;
 }
 
+@media (max-width:800px) {
+	.profile-pic {
+	  display: none;
+	}
+  }
+
 .sub-headers {
-	background-color: lightgrey
+	background-color: lightgrey;
 }
 
 .banner {
