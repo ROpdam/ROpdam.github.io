@@ -2,7 +2,7 @@
 Personal portfolio stating my experiences, educations, projects and contact information
 
 ```
-├── Main.html
+├── index_offline.html
 │
 ├── custom.css
 ├── custom.js
