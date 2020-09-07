@@ -29,4 +29,4 @@ Personal portfolio stating my experiences, educations, projects and contact info
 └── README.md
 ```
 
-To be hosted on github.io
+Can be found on https://ropdam.github.io/
