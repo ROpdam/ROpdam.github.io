@@ -17,7 +17,7 @@ Personal portfolio stating my projects, experiences, educations and contact info
 │   ├── linkedin.png
 │   ├── schiphol.png
 │   ├── smu.png
-│   ├── sri_lanka.png (local)
+│   ├── sri_lanka.png
 │   ├── vu.png
 │   ├── work_image.jpg
 │   └── ygroup.png
