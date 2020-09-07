@@ -1,5 +1,5 @@
 # Portfolio Website
-Personal portfolio stating my experiences, educations, projects and contact information
+Personal portfolio stating my projects, experiences, educations and contact information
 
 ```
 ├── index.html
@@ -8,7 +8,7 @@ Personal portfolio stating my experiences, educations, projects and contact info
 ├── custom.js
 │
 ├── files
-│   └── CV_Robin_Opdam_2019.pdf
+│   └── CV_Robin_Opdam_2020.pdf
 │
 ├── images
 │   ├── at_logo.png
@@ -19,6 +19,7 @@ Personal portfolio stating my experiences, educations, projects and contact info
 │   ├── smu.png
 │   ├── sri_lanka.png (local)
 │   ├── vu.png
+│   ├── work_image.jpg
 │   └── ygroup.png
 │
 ├── boostrap.css
