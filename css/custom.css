@@ -13,7 +13,7 @@ body {
 
 @media (max-width:800px) {
 	.profile-pic {
-		width: 30%;
+		width: 40%;
 		/* position: absolute;
 		top: -1200%;
 		left: 70%; */
@@ -31,7 +31,7 @@ body {
 	backface-visibility: hidden;
 }
 
-.top-left {
+.center-text {
 	transition: 0.3s ease;
 	opacity: 0;
 	position: absolute;
@@ -47,7 +47,7 @@ body {
 	opacity: 0.3;
 }
 
-.container-fluid:hover .top-left {
+.container-fluid:hover .center-text {
 	opacity: 0.8;
 }
 
