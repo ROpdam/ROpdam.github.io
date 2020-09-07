@@ -13,10 +13,11 @@ body {
 
 @media (max-width:800px) {
 	.profile-pic {
-		width: 20%;
-		position: absolute;
+		width: 30%;
+		/* position: absolute;
 		top: -1200%;
-		left: 70%;
+		left: 70%; */
+		/* display: none; */
 	}
   }
 
