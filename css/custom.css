@@ -20,9 +20,16 @@ body {
 	width: 110%;
 }
 
-@media (max-width:800px) {
+.rule {
+	display: none;
+}
+
+@media (max-width:770px) {
 	.profile-pic {
 		width: 40%;
+	}
+	.rule {
+		display: block;
 	}
   }
 
