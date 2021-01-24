@@ -29,26 +29,28 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/51d26da992.js"></script>
   </head>
 
   <body class="page-style" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Robin's Portfolio</a>
+      <a class="navbar-brand" href="#" id=nav-fade0>Robin's Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item" id=nav-fade1>
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id=nav-fade2>
             <a class="nav-link" href="#experience">Experience<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id=nav-fade3>
             <a class="nav-link" href="#education">Education</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id=nav-fade4>
             <a class="nav-link" href="#contact">Contact & Info</a>
           </li>
         </ul>
@@ -90,52 +92,84 @@
         </div>
       </div>
 
-      <div class="sub-header" id="projects" style="margin-top:0px;">
+      <div class="sub-header fide-in-right" id="projects" style="margin-top:0px;">
         <div class="container">
-          <h1>Projects</h1>
+          <div class="row justify-content-center">
+            <h1>Projects</h1>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 item panel">
-            <div  class="panel-heading"><img class="img-fluid rounded" src="images/ygroup.png" alt="Card image"></div>
-            <h5>Improving Recommendations</h5>
-            <ul>
-              <li>
-                <h6>20% increase in CR</h6>
-              </li>
-            </ul>
-            <p class="collapse">Applied business rules to improve recommendations on the website of one of YGroup's clients using Python</p> 
-            <p class="collapse">The Python script requires an excel file with business rules as input to produce a plug and play cross-sell recommendation file to work with their website. This implies anyone with domain knowledge is able to create a recommendation file.</p> 
+        <div class="row justify-content-center">
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">                                                        
+                <div><img class="img-fluid rounded" src="images/ygroup.png" alt="Card image"></div>                
+                <h5>Improving Recommendations</h5>
+                <ul>
+                  <li>
+                    <h6>20% increase in CR</h6>
+                  </li>
+                </ul>
+                <p class="bottom-right">02-08/2020</p>                      
+              </div>
+              <div class="card back">                  
+                <h6>YGroup: Graduate Intern Data Science</h6>
+                <br />
+                <p class="card-text">Applied business rules to improve recommendations on the website of one of YGroup's clients using Python</p> 
+                <p class="card-text">The Python script requires an excel file with business rules as input to produce a plug and play cross-sell recommendation file to work with their website. This implies anyone with domain knowledge is able to create a recommendation file.</p>               
+              </div>
+            </div>
           </div>
-          <br />
-          <div class="col-md-5 item panel">
-            <div class="panel-heading"><img class="img-fluid rounded" src="images/msc_thesis.png" alt="Card image"></div>
-            <br />
-            <h5>Master Thesis</h5>
-            <ul>
-              <li>
-                <h6>Grade: 9/10</h6>
-              </li>
-              <li>
-              <h6>Nominated for Amsterdam Data Science <a href="https://amsterdamdatascience.nl/events/thesis-awards/" target="_blank">Thesis Award</a></h6>
-              </li>
-            </ul>
-            <p class="collapse"> This work sheds a different light on the differences between deep learning and classical recommendation algorithms by comparing them on both a Movie dataset and a Fashion dataset. Their performance is thoroughly compared based on their implementation, the resulting Recall@n and NDCG@n scores. </p>
-            <p class="collapse">
-              <a href="https://science.vu.nl/en/Images/stageverslag-opdam_tcm296-946055.pdf" target="_blank">Thesis</a>, 
-              <a href="https://github.com/ROpdam/recommender_comparison" target="_blank">Code Repository</a>
-            </p>
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <div><img class="img-fluid rounded" src="images/msc_thesis.png" alt="Card image"></div>
+                <br />
+                <h5>Master Thesis</h5>
+                <ul>
+                  <li>
+                    <h6>Grade: 9/10</h6>
+                  </li>
+                  <li>
+                  <h6>Nominated for Amsterdam Data Science <a href="https://amsterdamdatascience.nl/events/thesis-awards/" target="_blank">Thesis Award</a></h6>
+                  </li>
+                </ul>
+                <p class="bottom-right">02-08/2020</p>
+              </div>
+              <div class="card back">                  
+                    <h6>Master Thesis: Comparison of Deep Learning Product Recommendation Engines in Different Settings</h6>
+                    <br />
+                    <p class="card-text"> This work sheds a different light on the differences between deep learning and classical recommendation algorithms by comparing them on both a Movie dataset and a Fashion dataset. Their performance is thoroughly compared based on their implementation, the resulting Recall@n and NDCG@n scores. </p>
+                    <p class="card-text">
+                      <ul>
+                      <li><a href="https://science.vu.nl/en/Images/stageverslag-opdam_tcm296-946055.pdf" target="_blank">Thesis</a></li>
+                      <li><a href="https://github.com/ROpdam/recommender_comparison" target="_blank">Code Repository</a></li>
+                    </ul>
+                    </p>                  
+              </div>
+            </div>
           </div>
-          <br />
-          <div class="col-md-5 item panel">
-            <div class="panel-heading"><img class="img-fluid rounded" src="images/portfolio_website.png" alt="Card image"></div>
-            <br />
-            <h5>Portfolio Website</h5>
-            <p class="collapse">Created this portfolio website using HTML, CSS and JavaScript</p>
-            <p class="collapse"><a href="https://github.com/ROpdam/ROpdam.github.io" target="_blank">Code Repository</a></p>
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">                                  
+                <div><img class="img-fluid rounded" src="images/portfolio_website.png" alt="Card image"></div>
+                <br />                  
+                <br />
+                <h5>Portfolio Website</h5>                      
+                <br />
+                <p class="bottom-right">07-now/2020</p>            
+                </div>
+              <div class="card back">                
+                  <p class="card-text">Created this portfolio website using HTML, CSS and JavaScript</p>
+                  <p class="card-text"><a href="https://github.com/ROpdam/ROpdam.github.io" target="_blank">Code Repository</a></p>                
+              </div>
           </div>
-          <br />
+        </div>
+        <!-- <div class="col-md-6  card-container">
+          
+        </div> -->
+          <!-- <br /> -->
           <!-- <div class="col-md-5 item panel">
             <div class="panel-heading"><img class="img-fluid rounded" src="images/portfolio_website.png" alt="Card image"></div>
             <br />
@@ -147,106 +181,167 @@
       </div> 
       <br />
 
-      <div class="sub-header" id="experience">
+      <div class="sub-header fide-in-right" id="experience">
         <div class="container">
-          <h1>Experience</h1>
+          <div class="row justify-content-center">
+            <h1>Experience</h1>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 item panel">
-            <img class="img-fluid panel-heading" src="images/ygroup.png" alt="Card image">
-            <h4 class = "panel-heading">Graduate Intern Data Science</h4>
-            <p class="collapse">Applied business rules to improve recommendations on the website of one of its clients using Python</p>
-            <p class="collapse">Built a dashboard to contribute to marketing campaign tracking using Google data studio</p>
-            <p class="collapse">Wrote my MSc. thesis about a Comparison of Deep Learning Product Recommendation Engines in Different Settings (9/10)</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <img class="img-fluid panel-heading" src="images/ygroup.png" alt="Card image">
+                <h4>Graduate Intern Data Science</h4>
+                <p class="bottom-right">02-08/2020</p>
+              </div>
+              <div class="card back">
+                <h6>YGroup: Graduate Intern Data Science</h6> 
+                <br />
+                <p>Applied business rules to improve recommendations on the website of one of its clients using Python</p>
+                <p>Built a dashboard combining different marketing channels with Funnel.io for campaign tracking using Google Data Studio</p>
+                <p>Wrote my MSc. thesis about a Comparison of Deep Learning Product Recommendation Engines in Different Settings (9/10)</p>              
+              </div>
+            </div>
           </div>
+        
 
-          <div class="col-md-5 offset-md-1 item panel">
-            <img class="img-fluid panel-heading" src="images/schiphol.png" alt="Card image">
-            <h4 class="panel-heading">Intern Data Analyst</h4>
-            <p class="collapse">Analysed passenger security data to provide insights in staffing for different security filters. Introduced a new measure which combined several known features to measure under- and overstaffing of the security lanes.</p>
-            <p class="collapse">Used Python and R for Exploratory Data Analysis</p>
-            <p class="collapse">Created an R Shiny tool to view the trend of this new measurement in parallel with for example, throughput time.</p>
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <img class="img-fluid" src="images/schiphol.png" alt="Card image">
+                <h4>Intern Data Analyst</h4>  
+                <p class="bottom-right">08/2018</p>              
+              </div>
+              <div class="card back">
+                <h6>Intern Data Analyst</h6>
+                <br />
+                <p>Analysed passenger security data to provide insights in staffing for different security filters. Introduced a new measure which combined several known features to measure under- and overstaffing of the security lanes.</p>
+                <p>Used Python and R for Exploratory Data Analysis</p>
+                <p>Created an R Shiny tool to view the trend of this new measurement in parallel with for example, throughput time.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <br />
-    <div class="sub-header" id="education">
+    <div class="sub-header fide-in-right" id="education">
       <div class="container">
-          <h1 class="display-5">Education</h1>
+        <div class="row justify-content-center">
+          <h1>Education</h1>
+        </div>
       </div>
     </div>
 
     <div class="container">
-        <div class="row">
-          <div class="col-md-5 item panel">
-            <div  class="panel-heading"><img class="img-fluid" src="images/vu.png" alt="Card image"></div>
-            <br />
-            <h5>MSc. Business Analytics</h5>
-            <ul>
-              <li>
-                <h6>Magna Cum Laude</h6>
-              </li>
-            </ul>
-            <p class="collapse">The objective of this two year Master Programme is to enrich our understanding of the applications of Data Science and Optimisation to in-company problems. The programme offers a broad selection of courses in which I steered towards Data Science.</p> 
-            <p class="collapse">With great interest in the subjects I finished the programme with an average of 8.5/10 and a 9/10 for my Thesis: Comparison of Deep Learning Product Recommendation Engines in Different Settings.</p> 
-            <p class="collapse"><b>Courses include:</b> Advanced Machine Learning, Reinforcement Learning, Data Mining Techniques, Information Retrieval and Statistical Models.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <div><img class="img-fluid" src="images/vu.png" alt="Card image"></div>
+                <br />
+                <br />
+                <h5>MSc. Business Analytics</h5>
+                <ul>
+                  <li>
+                    <h6>Magna Cum Laude</h6>
+                  </li>
+                </ul>
+                <p><b>Courses include:</b> Advanced Machine Learning, Reinforcement Learning, Data Mining Techniques, Information Retrieval and Statistical Models.</p>              
+                <p class="bottom-right">2018-2020</p>
+              </div>              
+              <div class="card back">
+                <h6>VU: BSc. Business Analytics</h6>  
+                <br />
+                <p>The objective of this two year Master Programme is to enrich our understanding of the applications of Data Science and Optimisation to in-company problems. The programme offers a broad selection of courses in which I steered towards Data Science.</p> 
+                <p>With great interest in the subjects I finished the programme with an average of 8.5/10 and a 9/10 for my Thesis</p>                 
+              </div>
+            </div>
           </div>
-          <div class="col-md-5 item panel">
-            <img class="img-fluid panel-heading" src="images/smu.png" alt="Card image">
-            <h5>Exchange Programme</h5>
-            <p class="collapse">Living and studying abroad have brought me many things including: international relationships, different cultural views, proficiency in the english language.</p>
-            <p class="collapse">Important is that it has showed me the possibilities of one's future are endless if you are willing to put in the work.</p>
-            <p class="collapse"><b>Courses include:</b> Operations Management, Quantatative Risk Analysis, Strategy</p>
+
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <img class="img-fluid panel-heading" src="images/smu.png" alt="Card image">                
+                <h5>Exchange Programme</h5>          
+                <br />
+                <p><b>Courses include:</b> Operations Management, Quantatative Risk Analysis, Strategy</p>      
+                <p class="bottom-right">2017</p>
+              </div>
+              <div class="card back">
+                <h6>SMU: Exchange Programme</h6>  
+                <br />
+                <p>Living and studying abroad have brought me many things including: international relationships, different cultural views, proficiency in the english language.</p>
+                <p>Important is that it has showed me the possibilities of one's future are endless if you are willing to put in the work.</p>                
+              </div>          
+            </div>
           </div>
-          <div class="col-md-5 item panel">
-            <div class="panel-heading"><img class="img-fluid" src="images/vu.png" alt="Card image"></div>
-            <br />
-            <h5>BSc. Business Analytics</h5>
-            <p class="collapse">A combination of Computer Science, Mathemathics and Business management focussed on the transformation and handling of big data. The programme is based on practical assignments that provide hands on experience with dissecting problems, analysing and optimisation.</p> 
-            <p class="collapse">Finalised the programme with a project analysing bottlenecks within Schiphol Security lanes data using Python and R, Grade: 8/10</p>
-            <p class="collapse"><b>Courses include:</b> Advanced Programming, Stochastic Modeling, Statistical Data Analysis, Machine Learning.</p>
+
+          <div class="col-md-6 card-container">
+            <div class="card-flip">
+              <div class="card front">
+                <div class="panel-heading"><img class="img-fluid" src="images/vu.png" alt="Card image"></div>
+                <br />                
+                <h5>BSc. Business Analytics</h5> 
+                <br />
+                <p><b>Courses include:</b> Advanced Programming, Stochastic Modeling, Statistical Data Analysis, Machine Learning.</p> 
+                <p class="bottom-right">2015-2018</p>
+              </div>
+              <div class="card back">
+                <h6>VU: BSc. Business Analytics</h6>  
+                <br />
+                <p>A combination of Computer Science, Mathemathics and Business management focussed on the transformation and handling of big data. The programme is based on practical assignments that provide hands on experience with dissecting problems, analysing and optimisation.</p> 
+                <p>Finalised the programme with a project analysing bottlenecks within Schiphol Security lanes data using Python and R, Grade: 8/10</p>                
+              </div>
+            </div>
           </div>
         </div>
       </div> 
       <br />
       <br />
-    <div class="sub-header" id="contact">
+    <div class="sub-header fide-in-right" id="contact">
       <div class="container">
-          <h1 class="display-5">Contact & Info</h1>
-      </div>
-    </div>  
-
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <a href="https://www.linkedin.com/in/robinopdam/" target="_blank">
-            <img class="logo-small" src="images/linkedin.png" alt="Card image">
-          </a> 
+        <div class="row justify-content-center">
+          <h1>Contact & Info</h1>
         </div>
-        <div class="col-3" style="margin-left: 30px">
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row justify-content-center">
+        <br />
+        <p style="font-size:25px; margin-top:10px;">Happy to <b>connect!</b></p>
+      </div>
+      <div class="row justify-content-center">
+          <p class="email">robinopdam@hotmail.com</p>
+      </div>
+    </div> 
+
+    <div class="container">      
+      <div class="row justify-content-center">        
+          <a href="https://www.linkedin.com/in/robinopdam/" target="_blank">       
+            <span class="contact-icons">
+              <i class="fa fa-linkedin"></i>
+            </span>        
+          </a>         
           <a href="https://github.com/ROpdam?tab=repositories" target="_blank">
-            <img class="logo-small" src="images/github.png" alt="Card image">
-          </a>
-      </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <a href="files/CV_Robin_Opdam_2020.pdf" target="_blank">
-            <img class="cv-logo" src="images/cv.png" alt="Card image">
-          </a>
+            <span class="contact-icons">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>          
+            <a href="files/CV_Robin_Opdam_2020.pdf" target="_blank">              
+              <span class="contact-icons">
+                <i class="fa fa-id-badge"></i>
+              </span>            
+            </a>            
+          </div>
         </div>
-        <div class="col-3 email panel">
-          <h5 class = "panel-heading">Email</h5>
-          <p class="collapse" style="font-size:10px">robinopdam@hotmail.com</p>
-        </div>
-      </div> 
 
     <hr>
     <footer class="container">
-      <small>Last edited November 2020</small>
+      <small>Last edited January 2021</small>
     </footer>
     <br />
 
@@ -254,10 +349,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <!-- <script scr="custom.js"></script> -->
-    <script>window.jQuery || document.write('<script src="javascript/jquery-slim.min.js"><\/script>')</script>
+    <!-- <script>window.jQuery || document.write('<script src="javascript/jquery-slim.min.js"><\/script>')</script> -->    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="javascript/custom.js"></script>
     <script src="javascript/popper.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
-    <script src="javascript/custom.js"></script>
   </body>
 </html>
