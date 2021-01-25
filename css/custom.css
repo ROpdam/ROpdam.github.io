@@ -47,7 +47,7 @@ body {
 	backface-visibility: hidden;
 }
 
-.bottom-left {
+.top-left {
 	font-size: 10px;
 	display: none;
 	color: black;
@@ -60,7 +60,7 @@ body {
 	opacity: 0.6;
 }
 
-.container-fluid:hover .bottom-left {
+.container-fluid:hover .top-left {
 	opacity: 0.9;
 	display: block;
 }
@@ -85,27 +85,6 @@ body {
 	z-index: 0;
 }
 
-.panel-img {
-	border-radius: 25px;
-}
-
-.item {
-	margin: 30px;
-	padding: 20px;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 10px 7px 10px 5px;
-}
-
-.item:hover{
-	box-shadow: 10px 7px 10px 5px;
-	padding: 40px;
-	border-color: lightgrey;
-	border-radius: 25px;
-	transition: 0.5s; 
-
-}
-
 .contact-icons {
 	font-size: 2em; 
 	color: black;
@@ -115,70 +94,13 @@ body {
 }
 
 .contact-icons:hover {	
-	/* box-shadow: 0px 0px 0px 5px; */
 	padding: 15px;
 	transition: 1s;
 }
 
 .email {
 	font-size:40px;
-	margin: 15px;
-}
-
-.logo-small {
-	/* margin-left: 30px;
-	padding: 25px; */
-	width: 30px;
-	height: 40px;
-	border-color: lightgrey;
-	border-radius: 180px;
-}
-
-.logo-small:hover {
-	/* box-shadow: 10px 0px 10px 0px black;
-	padding: 30px;
-	border: solid 0px; */
-	transition: 0.3s; 
-	border: solid 2px black;
-}
-
-.cv-logo {
-	margin-left: 50px;
-	padding: 10px;
-	width: 100px;
-	height: 110px;
-	/*border-color: lightgrey;*/
-}
-
-.cv-logo:hover {
-	box-shadow: 10px 0px 10px 0px black;
-	padding: 15px;
-	transition: 0.3s;
-	border: solid 0px;
-	border-radius: 25px;
-	border-color: lightgrey;
-}
-
-.email {
-	padding: 20px;
-	margin-left: 75px;
-}
-
-.fide-in-right {
-    opacity: 0;
-    overflow: hidden;
-    width: 30%;
-    height: 100%;
-    margin: 0px;
-    -webkit-transition: width 1000ms ease-in, opacity 1s ease-out;
-    -moz-transition: width 1000ms ease-in, opacity 1s ease-out;
-    -o-transition: width 1000ms ease-in, opacity 1s ease-out;
-    transition: width 1000ms ease-in, opacity 1s ease-out;
-}
-
-.active {
-  opacity: 1;
-  width: 100%;
+	margin: 7%;
 }
 
 /*
@@ -186,7 +108,6 @@ flip card
 */
 .card-container {
 	display: grid;
-    /* perspective: 2000px; */
 }
 .card-flip {
     display: grid; grid-template: 1fr / 1fr;
@@ -235,56 +156,19 @@ flip card
 	font-size: 12px;
   }
 
-/* .card-container {
-	display: grid;
-    perspective: 2000px;
+.fide-in-right {
+    opacity: 0;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    margin: 0px;
+    -webkit-transition: width 1000ms ease-in, opacity 1s ease-out;
+    -moz-transition: width 1000ms ease-in, opacity 1s ease-out;
+    -o-transition: width 1000ms ease-in, opacity 1s ease-out;
+    transition: width 1000ms ease-in, opacity 1s ease-out;
 }
 
-.card {
-	border: 0px;
-	margin: 10px;
+.active {
+  opacity: 1;
+  width: 100%;
 }
-.card-body {
-	border-radius: 25px;
-	box-shadow: 10px 7px 10px 5px;
-}
-
-.card-flip > div {
-	display: grid; grid-template: 1fr / 1fr;
-    grid-template-areas: "frontAndBack";
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-	backface-visibility: hidden;
-	transition: transform 350ms;
-	transition-timing-function: linear;
-	width: 100%;
-	height: 100%;
-	display: flex;
-  }
-  
-  .card-front {
-	grid-area: frontAndBack;
-	background-color:white;
-	transform: rotateY(0deg);
-  }
-  
-  .card-back {
-	grid-area: frontAndBack;
-    transform: rotateY(-180deg);
-	transform: rotateY(180deg);
-	position: absolute;
-	top: 0;
-  } */
-
-  .card-back-image {
-	  height: 15%;
-	  width: 30%;
-  }
-  
-  /* .card-flip:hover .card-front {
-	transform: rotateY(-180deg);
-  }
-	
-  .card-flip:hover .card-back {
-	transform: rotateY(0deg);
-  } */
