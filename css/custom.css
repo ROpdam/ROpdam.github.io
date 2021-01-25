@@ -1,20 +1,31 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
+  max-width:100%;
 }
+
+.navbar-default{
+	max-width:100%;
+}
+
+.nav-link {
+	color: white;
+	border-radius: 15px;
+	padding: 10px;
+	transition: 0.7s;
+	/* text-transform: uppercase; */
+  }
+  .nav-link.active {
+	color: white !important;
+	background-color: #b36200;
+	padding: 10px;
+	transition: 0.7s;
+  }
+  
 
 .page-style {
 	background-color: white;
 }
-
-.navbar-custom { 
-    background-color: #607FA4; 
-} 
-
-.navbar-custom .navbar-brand, 
-.navbar-custom .navbar-text { 
-    color: black; 
-} 
 
 .profile-pic {
 	width: 110%;
