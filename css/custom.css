@@ -2,6 +2,7 @@
 body {
   padding-top: 3.5rem;
   max-width:100%;
+  width: 100%;
 }
 
 .navbar-default{
@@ -33,6 +34,14 @@ body {
 
 .rule {
 	display: none;
+}
+
+@media screen and (max-width:770px) {
+	body {
+		padding-top: 3.5rem;
+		max-width:100%;
+		width: 100%;
+	  }	
 }
 
 @media (max-width:770px) {
@@ -170,7 +179,7 @@ flip card
 .fide-in-right {
     opacity: 0;
     overflow: hidden;
-    width: 100%;
+    width: 30%;
     height: 100%;
     margin: 0;
     -webkit-transition: width 1000ms ease-in, opacity 1s ease-out;
