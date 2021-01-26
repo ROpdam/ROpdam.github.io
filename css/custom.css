@@ -5,9 +5,9 @@ body {
   width: 100%;
 }
 
-.navbar-default{
+/* .navbar-default{
 	max-width:100%;
-}
+} */
 
 .nav-link {
 	color: white;
@@ -42,6 +42,11 @@ body {
 		max-width:100%;
 		width: 100%;
 	  }	
+
+	  .email {
+		font-size:30px;
+		margin: 7%;
+	}
 }
 
 @media (max-width:770px) {
