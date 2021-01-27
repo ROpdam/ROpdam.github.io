@@ -1,7 +1,6 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
-  overflow-x:hidden;
   width: 100%;
 }
 
@@ -14,8 +13,8 @@ body {
 	border-radius: 15px;
 	padding: 10px;
 	transition: 0.7s;
-	/* text-transform: uppercase; */
   }
+  
   .nav-link.active {
 	color: white !important;
 	background-color: #b36200;
@@ -35,32 +34,6 @@ body {
 .rule {
 	display: none;
 }
-
-@media (max-width:360px) {
-	body {
-		padding-top: 3.5rem;
-		overflow-x:hidden;
-		width: 100%;
-	  }	
-
-	  .email {
-		font-size:30px;
-		margin: 7%;
-	}
-
-	.navbar{
-		max-width:100%;
-	}
-}
-
-@media (max-width:770px) {
-	.profile-pic {
-		width: 40%;
-	}
-	.rule {
-		display: block;
-	}
-  }
 
 .sub-header {
 	background-color:#343a40;
@@ -200,4 +173,26 @@ flip card
 .active {
   opacity: 1;
   width: 100%;
+}
+
+
+@media (max-width:770px) {
+	.profile-pic {
+		width: 40%;
+	}
+	.rule {
+		display: block;
+	}
+  }
+
+@media only screen and (max-width: 470px) {
+	body {
+		padding-top: 3.5rem;
+		width: 100%;
+	  }	
+
+	  .email {
+		font-size:30px;
+		/* margin: 7%; */
+	}
 }
