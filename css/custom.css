@@ -1,14 +1,13 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
-  max-width:100%;
   overflow-x:hidden;
   width: 100%;
 }
 
-/* .navbar-default{
+.navbar{
 	max-width:100%;
-} */
+}
 
 .nav-link {
 	color: white;
@@ -37,10 +36,9 @@ body {
 	display: none;
 }
 
-@media screen and (max-width:360px) {
+@media (max-width:360px) {
 	body {
 		padding-top: 3.5rem;
-		max-width:100%;
 		overflow-x:hidden;
 		width: 100%;
 	  }	
@@ -48,6 +46,10 @@ body {
 	  .email {
 		font-size:30px;
 		margin: 7%;
+	}
+
+	.navbar{
+		max-width:100%;
 	}
 }
 
