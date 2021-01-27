@@ -16,6 +16,6 @@ $(document).ready(function() {
   });
 });
 
-$("#nav-fade0, #nav-fade1, #nav-fade2, #nav-fade3, #nav-fade4").hide().each(function(i) {
+$("#banner-fade, #nav-fade0, #nav-fade1, #nav-fade2, #nav-fade3, #nav-fade4").hide().each(function(i) {
   $(this).delay(i*500).fadeIn(1500);
 });

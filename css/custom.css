@@ -36,7 +36,7 @@ body {
 	display: none;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:360px) {
 	body {
 		padding-top: 3.5rem;
 		max-width:100%;
