@@ -2,6 +2,7 @@
 body {
   padding-top: 3.5rem;
   max-width:100%;
+  overflow-x:hidden;
   width: 100%;
 }
 
@@ -40,6 +41,7 @@ body {
 	body {
 		padding-top: 3.5rem;
 		max-width:100%;
+		overflow-x:hidden;
 		width: 100%;
 	  }	
 
