@@ -186,13 +186,15 @@ flip card
   }
 
 @media only screen and (max-width: 470px) {
-	body {
-		padding-top: 3.5rem;
-		width: 100%;
-	  }	
-
 	  .email {
 		font-size:30px;
 		/* margin: 7%; */
 	}
+}
+
+@media only screen and (max-width: 360px) {
+	.email {
+	  font-size:20px;
+	  /* margin: 7%; */
+  }
 }
