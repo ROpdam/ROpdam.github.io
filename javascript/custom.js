@@ -27,6 +27,6 @@ $(document).ready(function() {
   });
 });
 
-$("#nav-fade0, #nav-fade1, #nav-fade2, #nav-fade3, #nav-fade4").hide().each(function(i) {
+$("#nav-fade0, #nav-fade1, #nav-fade2, #nav-fade3, #nav-fade4, #card-fade1, #card-fade2, #card-fade3, #card-fade4").hide().each(function(i) {
   $(this).delay(i*600).fadeIn(1500);
 });
