@@ -158,7 +158,19 @@ flip card
 	font-size: 12px;
   }
 
-.fide-in-right {
+.slide-in-right {
+    opacity: 0;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    -webkit-transition: width 1000ms ease-in, opacity 1s ease-out;
+    -moz-transition: width 1000ms ease-in, opacity 1s ease-out;
+    -o-transition: width 1000ms ease-in, opacity 1s ease-out;
+    transition: width 1200ms ease-in, opacity 1s ease-out;
+}
+
+.slide-in-right-scroll {
     opacity: 0;
     overflow: hidden;
     width: 30%;
@@ -195,58 +207,5 @@ flip card
 	.email {
 	  font-size:20px;
 	  /* margin: 7%; */
-  }
-}
-
-.fade-in {
-	animation: fadeIn ease 12s;
-	-webkit-animation: fadeIn ease 12s;
-	-moz-animation: fadeIn ease 12s;
-	-o-animation: fadeIn ease 12s;
-	-ms-animation: fadeIn ease 12s;
-  }
-
-  @keyframes fadeIn {
-	0% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
-	}
-  }
-  
-  @-moz-keyframes fadeIn {
-	0% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
-	}
-  }
-  
-  @-webkit-keyframes fadeIn {
-	0% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
-	}
-  }
-  
-  @-o-keyframes fadeIn {
-	0% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
-	}
-  }
-  
-  @-ms-keyframes fadeIn {
-	0% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
   }
 }

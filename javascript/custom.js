@@ -4,8 +4,19 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 $(document).ready(function() {   
+    $('.slide-in-right').each( function(i){
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if( bottom_of_window > bottom_of_object ){
+        $(this).addClass("active");
+      }
+    }); 
+});
+
+$(document).ready(function() {   
   $(window).scroll( function() {
-    $('.fide-in-right').each( function(i){
+    $('.slide-in-right-scroll').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
