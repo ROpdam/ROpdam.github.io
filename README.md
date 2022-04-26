@@ -1,33 +1,32 @@
 # Portfolio Website
 Personal portfolio stating my projects, experiences, educations and contact information
+Can be found on https://ropdam.github.io/
 
 ```
 ├── index.html
 │
-├── custom.css
-├── custom.js
+├── css
+│   ├── bootstrap.css
+│   └── custom.css
+│
+├── javascript
+│   ├── bootstrap.min.js
+│   └── custom.js
 │
 ├── files
-│   └── CV_Robin_Opdam_2020.pdf
+│   ├── Msc_Thesis.pdf
+│   └── CV_Robin_Opdam_2021.pdf
 │
 ├── images
-│   ├── at_logo.png
-│   ├── cv.png
-│   ├── github.png
-│   ├── linkedin.png
+│   ├── docker-dash.jpg
+│   ├── favicon.png
+│   ├── focus.png
+│   ├── jsvu.png
 │   ├── schiphol.png
 │   ├── smu.png
-│   ├── sri_lanka.png
+│   ├── metyis-compressed.png
 │   ├── vu.png
-│   ├── work_image.jpg
-│   └── ygroup.png
-│
-├── boostrap.css
-├── bootstrap.min.js
-├── jquery-slim.min.js
-├── popper.min.js
+│   └── work_image.jpg
 │
 └── README.md
 ```
-
-Can be found on https://ropdam.github.io/
